@@ -1,11 +1,11 @@
 //----------1 uzduotis----------------
-for (let i = 0; ; i++) {
-  let sk = parseInt(prompt("Iveskite skaiciu"));
-  if (sk < 0) {
-    console.log(`ivestas neigiamas skaicius ${sk}`);
-    break;
-  }
-}
+// for (let i = 0; ; i++) {
+//   let sk = parseInt(prompt("Iveskite skaiciu"));
+//   if (sk < 0) {
+//     console.log(`ivestas neigiamas skaicius ${sk}`);
+//     break;
+//   }
+// }
 //------------------------------------
 
 //----------2 uzduotis----------------
@@ -100,18 +100,18 @@ for (let i = 0; ; i++) {
 //------------------------------------
 
 //----------10 uzduotis----------------
-// let sum = 0
-// do{
-//     let sk = parseInt(prompt("Iveskite skaiciu:"))
-//     if (sk==0){
-//         console.log(`suma=${sum}`)
-//         break
-//     }
-//     else if (sk%2==0){
-//         sum+=sk
-//     }
-//     else{
-//         continue
-//     }
-// }while(true)
+let sum = 0
+do{
+    let sk = parseInt(prompt("Iveskite skaiciu:"))
+    if (sk==0){
+        console.log(`suma=${sum}`)
+        break
+    }
+    else if (sk<0){
+        continue
+    }
+    else{
+        sum+=sk
+    }
+}while(true)
 //------------------------------------
